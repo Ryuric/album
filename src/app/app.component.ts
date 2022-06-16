@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ImagesService} from './service/images.service';
 
 @Component({
@@ -6,7 +6,8 @@ import { ImagesService} from './service/images.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent{
+export class AppComponent {
+  
   albumsId = [1, 2, 3];
   constructor(public imagesService: ImagesService){}
   saveNewImage(title: HTMLInputElement, albumId: HTMLSelectElement, url:HTMLInputElement){

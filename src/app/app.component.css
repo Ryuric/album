@@ -8,7 +8,7 @@ main{
     text-align: center;
 }
 
-mat-card{
+mat-card, app-images{
     margin: auto;
     width: 50%;
     display: block;
